@@ -1,17 +1,23 @@
-import React from 'react'
-// import Cats from './Components/Cats'
-// import Dogs from './Components/Dogs'
-// import Fishes from './Components/Fishes'
+import logo from './logo.svg';
+import './App.css';
+import Nav from './Components/Nav.jsx';
+import Slider from './Components/Slider.jsx';
+import Products from './Components/Products.jsx';
+// import Login from '../src/Login.jsx';
+
 
 function App() {
   return (
-    <div>
+    <div className="App">
+      <Nav/>
 
+      <Slider/>
+      <Products/>
 
-
-      {/* <Fishes/> */}
+      
+      
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
