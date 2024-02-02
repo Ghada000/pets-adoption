@@ -2,9 +2,10 @@ import React, { useState } from 'react';
 import './App.css';
 import Nav from './Components/Nav.jsx';
 import Slider from './Components/Slider.jsx';
-import Products from './Components/Products.jsx';
+// import Products from './Components/Products.jsx';
 import Chat from './Components/Chat.jsx';
 import AboutUs from './Components/AboutUs.jsx';
+import Fishes from './Components/Fishes.jsx'
 
 function App() {
   const [view, setView] = useState("");
@@ -19,7 +20,7 @@ function App() {
       <Slider />
       {view === "Chat" ? <Chat /> : null}
       {view === "AboutUs" ? <AboutUs /> : null}
-      {view === "" || view === "Home" ? <Products /> : null}
+      {view === "" || view === "Home" ? <Fishes /> : null}
     </div>
   );
 }
