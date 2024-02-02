@@ -16,7 +16,7 @@ function Dogs() {
   const fetchData = () => {
     axios.get("http://localhost:5000/api/dogs")
       .then((response) => {
-        setData(response.data);
+        setData(response.data)   ;
       })
       .catch((error) => {
         console.log(error);
