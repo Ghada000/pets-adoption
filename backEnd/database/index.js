@@ -30,15 +30,15 @@
 
     };
     const postCat=(body,callback)=>{
-    const sql='INSERT INTO `cats` SET name = ?, description = ? ,  image_Url= ? '
-    connection.query(sql,[body.name,body.description,body.image_Url],function(error,results,fields){
+    const sql='INSERT INTO `cats` SET name = ?, description = ? ,  image_url= ? '
+    connection.query(sql,[body.name,body.description,body.image_url],function(error,results,fields){
         callback(error,results)
     })
     };
     
     const updateCat=(id,body,callback)=>{
-        const sql = 'UPDATE `cats` SET name = ?,  description = ?  , image_Url= ?  WHERE id = ? '
-        connection.query(sql,[body.name,body.description,body.image_Url,id],function(error,results,fields){
+        const sql = 'UPDATE `cats` SET name = ?,  description = ?  , image_url= ?  WHERE id = ? '
+        connection.query(sql,[body.name,body.description,body.image_url,id],function(error,results,fields){
             callback(error,results)
         })
 
@@ -66,8 +66,8 @@
 
     };
     const postDog = (body, callback) => {
-        const sql = 'INSERT INTO `dogs` SET name = ?, description = ?, image_Url = ?';
-        connection.query(sql, [body.name, body.description, body.image_Url], function (error, results, fields) {
+        const sql = 'INSERT INTO `dogs` SET name = ?, description = ?, image_url = ?';
+        connection.query(sql, [body.name, body.description, body.image_url], function (error, results, fields) {
         if (error) {
             console.error(error);
             return callback(error, null);
@@ -77,8 +77,8 @@
     };
     
     const updateDog=(id,body,callback)=>{
-        const sql = 'UPDATE `dogs` SET name = ?,  description = ?  , image_Url= ?  WHERE id = ? '
-        connection.query(sql,[body.name,body.description,body.image_Url,id],function(error,results,fields){
+        const sql = 'UPDATE `dogs` SET name = ?,  description = ?  , image_url= ?  WHERE id = ? '
+        connection.query(sql,[body.name,body.description,body.image_url,id],function(error,results,fields){
             callback(error,results)
         })
 
@@ -106,14 +106,14 @@
 
     };
     const postFish=(body,callback)=>{
-    const sql='INSERT INTO `fishes` SET name = ?, description = ? ,  image_Url= ? '
-    connection.query(sql,[body.name,body.description,body.image_Url],function(error,results,fields){
+    const sql='INSERT INTO `fishes` SET name = ?, description = ? ,  image_url= ? '
+    connection.query(sql,[body.name,body.description,body.image_url],function(error,results,fields){
         callback(error,results)
     })
     };
     const updateFish=(id,body,callback)=>{
-        const sql = 'UPDATE `fishes` SET name = ?,  description = ?  , image_Url= ?  WHERE id = ? '
-        connection.query(sql,[body.name,body.description,body.image_Url,id],function(error,results,fields){
+        const sql = 'UPDATE `fishes` SET name = ?,  description = ?  , image_url= ?  WHERE id = ? '
+        connection.query(sql,[body.name,body.description,body.image_url,id],function(error,results,fields){
             callback(error,results)
         })
 
