@@ -1,0 +1,45 @@
+/* PetCareArticles.css */
+
+.pet-care-articles {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px;
+}
+
+.pet-article {
+  width: 45%;
+  border: 1px solid #ccc;
+  margin: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Improved shadow effect */
+  transition: transform 0.2s ease-in-out; /* Smooth transition on hover */
+}
+
+.pet-article:hover {
+  transform: scale(1.05); /* Scale the card on hover for a subtle zoom effect */
+}
+
+.pet-article img {
+  width: 40%; /* Make the image take the full width of its container */
+  height: 350px; /* Maintain the aspect ratio */
+  border-top-left-radius: 8px; /* Add rounded corners only to the top-left */
+  border-top-right-radius: 8px; /* Add rounded corners only to the top-right */
+  object-fit: cover; /* Ensure the image covers the entire container */
+}
+
+.article-content {
+  padding: 15px;
+}
+
+.article-content h2 {
+  margin-bottom: 10px;
+}
+
+.article-content p {
+  font-size: 14px;
+  color: #555;
+}
+
+/* Optional: Add a subtle background color on hover */
+.pet-article:hover {
+  background-color: #f8f8f8;
+}

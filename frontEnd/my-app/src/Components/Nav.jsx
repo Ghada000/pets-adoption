@@ -23,6 +23,15 @@ export default function Nav(props) {
           <li onClick={() => props.changeView("AboutUs")} className='lii'>
             About Us
           </li>
+          <li onClick={() => props.changeView("ProductsDogs")} className='lii'>
+            Our Dogs
+          </li>
+          <li onClick={() => props.changeView("ProductsCats")} className='lii'>
+            Our Cats
+          </li>
+          <li onClick={() => props.changeView("ProductsFishes")} className='lii'>
+            Our Fishes
+          </li>
         </ul>
       </div>
 

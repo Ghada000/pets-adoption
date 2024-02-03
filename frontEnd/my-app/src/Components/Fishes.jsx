@@ -1,4 +1,34 @@
+// import React, { useState, useEffect } from 'react';
+// import axios from 'axios';
 
+// function Fishes() {
+//   const [data, setData] = useState([]);
+
+
+//   useEffect(() => {
+//     axios.get("http://localhost:5000/api/fishes")
+//       .then((response) => {
+//         setData(response.data);
+//       })
+//       .catch((error) => {
+//         console.log(error);
+//       });
+//   }, []);
+
+//   return (
+//     <div>
+//       {data.map((item) => (
+//         <div key={item.id}>
+//           <h1>{item.name}</h1>
+//           <p>{item.description}</p>
+//           <img src={item.image_Url} alt={item.name} />
+//         </div>
+//       ))}
+//     </div>
+//   );
+// }
+
+// export default Fishes;
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 

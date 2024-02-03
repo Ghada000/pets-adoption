@@ -2,10 +2,14 @@ import React, { useState } from 'react';
 import './App.css';
 import Nav from './Components/Nav.jsx';
 import Slider from './Components/Slider.jsx';
-// import Products from './Components/Products.jsx';
+
 import Chat from './Components/Chat.jsx';
-import AboutUs from './Components/AboutUs.jsx';
-import Fishes from './Components/Fishes.jsx'
+// import AboutUs from './Components/AboutUs.jsx';
+import ProductsFishes from './Components/ProductsFishes.jsx';
+import ProductsDogs from './Components/ProductsDogs.jsx';
+import ProductsCats from './Components/ProductsCats.jsx';
+import PetCareArticles from './Components/PetCareArticles.jsx'
+
 
 function App() {
   const [view, setView] = useState("");
@@ -19,8 +23,14 @@ function App() {
       <Nav changeView={changeView} />
       <Slider />
       {view === "Chat" ? <Chat /> : null}
-      {view === "AboutUs" ? <AboutUs /> : null}
-      {view === "" || view === "Home" ? <Fishes /> : null}
+      {view === "ProductsDogs" ? <ProductsDogs /> : null}
+      {view === "ProductsCats" ? <ProductsCats /> : null}
+      {view === "ProductsFishes" ? <ProductsFishes/> : null}
+     
+      {(!view || view === "") && <PetCareArticles />}
+
+    
+
     </div>
   );
 }
