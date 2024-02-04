@@ -1,16 +1,32 @@
+// Nav.jsx
 import React, { useState } from 'react';
 import { IoPersonSharp } from "react-icons/io5";
 import { FaCartShopping } from "react-icons/fa6";
 import { MdOutlinePets } from "react-icons/md";
-import { TiDelete  } from "react-icons/ti";
+import { TiDelete } from "react-icons/ti";
+import PetAdoptionList from './CartList'; // Import the ShoppingCart component
 
 export default function Nav(props) {
   const [login, setLogin] = useState(false);
+  const [showCart, setShowCart] = useState(false);
+
+  const handleCartClick = () => {
+    if (props.currentView !== "") {
+      setShowCart(!showCart);
+      props.changeView("Cart");
+    } else {
+      setShowCart(!showCart);
+    }
+  };
+
+  const handleLoginClick = () => {
+    setLogin(!login);
+  };
 
   return (
-    <div className='header-Nav' >
+    <div className='header-Nav'>
       <div className='Nav-logo'>
-        <MdOutlinePets/>
+        <MdOutlinePets />
         <h6 className='name-logo'>PETS</h6>
       </div>
 
@@ -36,14 +52,14 @@ export default function Nav(props) {
       </div>
 
       <div className='Nav-login'>
-        <FaCartShopping className='sh' />
-        <IoPersonSharp className='log' onClick={() => setLogin(!login)} />
+        <FaCartShopping className='sh' onClick={handleCartClick} />
+        <IoPersonSharp className='log' onClick={handleLoginClick} />
       </div>
 
       {login ? 
         <div className="lo">
           <div className="login-container">
-            <TiDelete  className='x' onClick={() => setLogin(!login)} />
+            <TiDelete className='x' onClick={() => setLogin(!login)} />
             <h2>Login</h2>
             <div className="form-group">
               <label htmlFor="username">Username</label>
@@ -54,6 +70,16 @@ export default function Nav(props) {
               <input type="password" id="password" required />
             </div>
             <button type="submit">Login</button>
+          </div>
+        </div> 
+        : null
+      }
+
+      {showCart && props.currentView !== "Home" ? 
+        <div className="lo">
+          <div className="login-container">
+            <TiDelete className='x' onClick={() => setShowCart(false)} />
+            <PetAdoptionList cart={props.cart} setCart={props.setCart} />
           </div>
         </div> 
         : null
