@@ -3,18 +3,22 @@
       display: flex;
       justify-content: space-between;
       gap: 1rem;
-  
+      margin-top: 5%;
+    
       .box {
         position: relative;
         padding: 2rem;
         border-radius: 0.5rem;
         margin-bottom: 2rem;
-        background: rgb(123, 105, 105);
-  
+        background: rgb(200, 158, 6);
+        width : 30%;
+        margin-left: 1%;
+        margin-right: 1%;
         .title {
           text-align: center;
-          color: black;
+          color: rgb(14, 6, 71);
           font-size: 1.5rem;
+          font-size: xx-large;
         }
   
         .day {
@@ -26,7 +30,7 @@
         .icon {
           display: block;
           margin: 0 auto;
-          color: orangered;
+          color: rgb(2, 31, 89);
           font-size: 3rem;
           padding: 1rem 0;
         }
@@ -40,13 +44,13 @@
             justify-content: space-between;
             font-size: 1rem;
             padding: 0.5rem 0;
-            color: rgb(204, 199, 199);
+            color: rgb(1, 1, 1);
           }
         }
   
         .buy-button {
             
-              background: linear-gradient(to bottom right, #EF4765, #FF9A5A);
+              background-color: rgb(3, 13, 102);
               border: 0;
               border-radius: 12px;
               color: #FFFFFF;
@@ -76,9 +80,7 @@
             }
         }
   
-        .buy-button:hover {
-          background-color: #458ca0;
-        }
+    
 
        
       }
@@ -88,57 +90,59 @@
   .bucket-icon {
     display: block;
     margin: 0 auto;
-    color: rgb(196, 153, 138);
-    font-size: 3rem;
+    color: rgb(3, 4, 83);
+    font-size: 5rem;
     padding: 1rem 0;
 }
 
+
+.bucket-modal h2 {
+color: #dcad05;
+font-family: 'Times New Roman', Times, serif;
+}
+
 button#submit {
-    --color: #560bad;
-    font-family: inherit;
-    display: inline-block;
-    width: 8em;
-    height: 2.6em;
-    line-height: 2.5em;
-    margin: 20px;
-    position: relative;
-    overflow: hidden;
-    border: 2px solid var(--color);
-    transition: color 0.5s;
-    z-index: 1;
-    font-size: 17px;
-    border-radius: 6px;
-    font-weight: 500;
-    color: var(--color);
-  }
+  font-family: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 8em;
+  height: 2.6em;
+  margin: 20px;
+  position: relative;
+  overflow: hidden;
+  border: 2px solid var(--color);
+  transition: color 0.5s;
+  z-index: 1;
+  font-size: 18px;
+  border-radius: 6px;
+  font-weight: 500;
+  background: rgb(200, 158, 6);
+  text-align: center;
+}
+
+button#submit:hover {
+  color: #fff;
+}
+
+button#submit:before {
+  top: 100%;
+  left: 100%;
+  transition: all 0.7s;
+}
+
+button#submit:hover:before {
+  top: -30px;
+  left: -30px;
+}
+
+button#submit:active:before {
+  background: #3a0ca3;
+  transition: background 0s;
+}
+
   
-  button#submit:before {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    background: var(--color);
-    height: 150px;
-    width: 200px;
-    border-radius: 50%;
+  .plan h1 {
+    font-family: 'Times New Roman', Times, serif;
+   
   }
-  
-  button#submit:hover {
-    color: #fff;
-  }
-  
-  button#submit:before {
-    top: 100%;
-    left: 100%;
-    transition: all 0.7s;
-  }
-  
-  button#submit:hover:before {
-    top: -30px;
-    left: -30px;
-  }
-  
-  button#submit:active:before {
-    background: #3a0ca3;
-    transition: background 0s;
-  }
-  

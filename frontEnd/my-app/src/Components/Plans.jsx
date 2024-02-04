@@ -93,7 +93,7 @@ const PlanSection = () => {
   return (
     <section className="plan" id="plan">
       <h1 className="heading">
-        Choose a <span>plan</span>
+        Choose a plan
       </h1>
       <div className="box-container">
         {/* Mapping over plans to display boxes */}
