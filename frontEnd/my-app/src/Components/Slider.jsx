@@ -36,7 +36,7 @@ const Slider = () => {
                     <img
                         style={{ height: "600px", width: "99%" }}
                         className=""
-                        src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhSh448v__QWq8AhyphenhyphenGZm1RpTm_rymi6jV1gPYinZhEpOofptwcmzBq9UxqF78Pj3r1IPEZ1G2Z3GaDoLwz7CzEvyRkIgSc9UzPeFhS84F1Dul5kDQ2ra0OrPVdCA16Onr63i_RXGua2Ebgwb6pxQ9fCeVRY0mJyJ6b7kcNhSCPOz_GT61uweGJp0V3A-hA/s1640/PHI%20fundraiser%20Nov%202023.png"
+                        src="https://images.unsplash.com/photo-1507682520764-93440a60e9b5?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fHBldCUyMGFkb3B0aW9ufGVufDB8fDB8fHww.png"
                         alt="First slide"
                     />
                     

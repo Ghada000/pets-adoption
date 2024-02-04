@@ -1,6 +1,7 @@
 import React ,{useEffect,useState}from 'react'
 import { FaRegHeart } from "react-icons/fa";
 import axios from 'axios'
+import '../App.css'
 
 export default function ProductsFishes() {
 const [data,setData]=useState([])
@@ -38,8 +39,8 @@ return (
     <FaRegHeart className='h'/>
     </div>
     <div className='class'>
-<button>Update</button>
-<button>Delete</button>
+<button className='btns'>Update</button>
+<button className='btns'>Delete</button>
 
 
     </div>
