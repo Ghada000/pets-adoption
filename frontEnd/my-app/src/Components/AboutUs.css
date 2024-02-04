@@ -1,0 +1,45 @@
+.about-us-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    color: #333;
+    font-family: 'Roboto', sans-serif; /* Replace with your preferred font */
+  }
+  
+  .text-container {
+    width: 60%;
+  }
+  
+  .text-container h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+  
+  .text-container p {
+    font-size: 18px;
+    line-height: 1.5;
+  }
+  
+  .qr-code-container {
+    width: 40%;
+    text-align: right;
+  }
+  
+  .qr-code-container img {
+    width: 150px; /* Adjust QR code size as needed */
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .qr-code-container img:hover {
+    transform: scale(1.1); /* Enlarge QR code on hover */
+  }
+  
+  /* Hover effects for text */
+  .text-container:hover h2,
+  .text-container:hover p {
+    color: #007bff; /* Change color on hover */
+  }
