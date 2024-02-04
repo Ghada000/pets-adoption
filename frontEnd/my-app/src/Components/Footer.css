@@ -1,0 +1,38 @@
+
+
+/* Footer.css */
+
+.footer {
+    background-color:rgb(193, 155, 3);
+    color: #e8dada;
+    padding: 20px;
+    text-align: center;
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+    z-index: 100; /* Ensure it appears on top of other elements */
+  }
+  
+  .icon-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  
+  .icon {
+    margin: 0 10px;
+    cursor: pointer;
+    color: rgb(4, 4, 79);
+  }
+  
+  .description {
+    font-size: 22px;
+    margin-bottom: 10px;
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+  .p{
+    color: rgb(4, 4, 79);
+    font-size: 18px;
+  }
+  

@@ -12,12 +12,15 @@ import Plans from './Components/Plans.jsx'
 import HealthCare from './Components/HealthCare.jsx';
 // import QRCodeComponent from './Components/QRCodeComponent'
 import AboutUs  from './Components/AboutUs.jsx';
+import CartList from './Components/CartList.jsx'
+import Footer from './Components/Footer.jsx'
 
 
 function App() {
   const [view, setView] = useState("");
-  const [cart, setCart] = useState([]);
 
+  const [cart, setCart] = useState([]);
+ 
   const changeView = (newView) => {
     setView(newView);
   };
@@ -35,12 +38,13 @@ function App() {
       {view === "ProductsCats" ? <ProductsCats /> : null}
       {view === "ProductsFishes" ? <ProductsFishes/> : null}
       {view === "AboutUs" ? <AboutUs/> : null}
+    
      
       {(!view || view === "") && <PetCareArticles />}
       {(!view || view === "") && <Plans />}
       {(!view || view === "") && <HealthCare />}
       {/* {(!view || view === "") && <QRCodeComponent />} */}
-
+      
     
 
       {view === "Chat" && <Chat />}
@@ -48,8 +52,13 @@ function App() {
       {view === "ProductsDogs" && <ProductsDogs addToCart={handleAddToCart} />}
       {view === "ProductsCats" && <ProductsCats addToCart={handleAddToCart} />}
       {view === "ProductsFishes" && <ProductsFishes addToCart={handleAddToCart} />}
+     
       
       {(view === "Cart" && cart.length > 0) && <CartList cart={cart} setCart={setCart} />}
+        <div>
+      <Footer/>
+
+        </div>
     </div>
   );
 }
