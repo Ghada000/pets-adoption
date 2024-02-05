@@ -1,8 +1,8 @@
-// ShoppingCart.jsx
+// CartList.jsx
 import React, { useState, useEffect } from 'react';
 
-function ShoppingCart({ cart, onDeleteItem }) {
-  const [customerInfo, setCustomerInfo] = useState({
+function CartList({ cart, setCart }) {
+  const [adopterInfo, setAdopterInfo] = useState({
     name: '',
     phoneNumber: '',
     address: '',
@@ -10,30 +10,35 @@ function ShoppingCart({ cart, onDeleteItem }) {
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setCustomerInfo((prevInfo) => ({ ...prevInfo, [name]: value }));
+    setAdopterInfo((prevInfo) => ({ ...prevInfo, [name]: value }));
   };
 
-  const calculateTotalPrice = () => {
-    return cart.reduce((total, product) => {
-      const productPrice = parseFloat(product.price);
-      const productQuantity = parseInt(product.quantity, 10);
+  const calculateTotalAdoptionFee = () => {
+    return cart.reduce((total, pet) => {
+      const adoptionFee = parseFloat(pet.adoptionFee);
 
-      if (!isNaN(productPrice) && !isNaN(productQuantity)) {
-        return total + productPrice * productQuantity;
+      if (!isNaN(adoptionFee)) {
+        return total + adoptionFee;
       } else {
-        console.error(`Invalid price or quantity for product: ${product.name}`);
+        console.error(`Invalid adoption fee for pet: ${pet.name}`);
         return total;
       }
     }, 0);
   };
 
-  const handlePlaceOrder = () => {
-    console.log('Placing order with customer info:', customerInfo);
-    alert('Order placed successfully!');
+  const handleAdoptPet = () => {
+    console.log('Adopting pet with adopter info:', adopterInfo);
+    alert('Pet adopted successfully!');
+  };
+
+  const handleRemovePet = (index) => {
+    const updatedCart = [...cart];
+    updatedCart.splice(index, 1);
+    setCart(updatedCart);
   };
 
   useEffect(() => {
-    console.log('Cart in ShoppingCart:', cart);
+    console.log('Cart in CartList:', cart);
   }, [cart]);
 
   if (!cart || !Array.isArray(cart)) {
@@ -42,34 +47,34 @@ function ShoppingCart({ cart, onDeleteItem }) {
   }
 
   return (
-    <div className="shopping-cart">
+    <div className="cart-list">
       <h2>Shopping Cart</h2>
       <ul>
-        {cart.map((product, index) => (
+        {cart.map((pet, index) => (
           <li key={index}>
-            {product.name} - Quantity: {product.quantity} - Price: {product.price}
-            <button onClick={() => onDeleteItem(index)}>Delete</button>
+            {pet.name} - Adoption Fee: {pet.adoptionFee} TND
+            <button onClick={() => handleRemovePet(index)}>Remove</button>
           </li>
         ))}
       </ul>
-      <p>Total Price: {calculateTotalPrice()} TND</p>
+      <p>Total Adoption Fee: {calculateTotalAdoptionFee()} TND</p>
 
-      <div className="order-container">
-        <h3>Customer Information</h3>
+      <div className="adoption-container">
+        <h3>Adopter Information</h3>
         <form>
           <label>Name:</label>
-          <input type="text" name="name" value={customerInfo.name} onChange={handleChange} />
+          <input type="text" name="name" value={adopterInfo.name} onChange={handleChange} />
 
           <label>Phone Number:</label>
-          <input type="text" name="phoneNumber" value={customerInfo.phoneNumber} onChange={handleChange} />
+          <input type="text" name="phoneNumber" value={adopterInfo.phoneNumber} onChange={handleChange} />
 
           <label>Address:</label>
-          <input type="text" name="address" value={customerInfo.address} onChange={handleChange} />
+          <input type="text" name="address" value={adopterInfo.address} onChange={handleChange} />
         </form>
-        <button onClick={handlePlaceOrder}>Confirm Order</button>
+        <button onClick={handleAdoptPet}>Adopt Pet</button>
       </div>
     </div>
   );
 }
 
-export default ShoppingCart;
+export default CartList;

@@ -393,7 +393,7 @@
 
 .btns:hover {
   background-color: black;
-  color: yellow;
+  color: rgb(71, 71, 8);
 }
 
 .btns:active {

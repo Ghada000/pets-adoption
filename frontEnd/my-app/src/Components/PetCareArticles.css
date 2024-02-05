@@ -1,0 +1,91 @@
+/* PetCareArticles.css */
+
+.pet-care-articles {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px;
+}
+
+.pet-article {
+  width: 50%;
+  border: 1px solid #ccc;
+  margin: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  transition: transform 0.2s ease-in-out; 
+ 
+  
+}
+
+.pet-article:hover {
+  transform: scale(1.05); 
+}
+
+.pet-article img {
+  width: 40%; 
+  height: 350px; 
+  border-top-left-radius: 8px; 
+  border-top-right-radius: 8px; 
+  object-fit: cover; 
+}
+
+.article-content {
+  padding: 15px;
+}
+
+.article-content h2 {
+  margin-bottom: 10px;
+  font-family: Helvetica, sans-serif;
+  color: #3366cc; /* Example color, you can change it */
+  /* Add more styles as needed */
+}
+.article-content p {
+  font-size: 14px;
+  color: #555;
+}
+
+
+.pet-article:hover {
+  background-color: #f8f8f8;
+}
+
+.title{
+  font-family: Comic Sans MS, Comic Sans, cursive;
+  margin-top: 15px;
+}
+
+.o9ros {
+            
+  background: linear-gradient(to bottom right, #EF4765, #FF9A5A);
+  border: 0;
+  border-radius: 12px;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system,system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 2.5;
+  outline: transparent;
+  padding: 0 1rem;
+  text-align: center;
+  text-decoration: none;
+  transition: box-shadow .2s ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  margin-top: 10%;
+}
+
+.button-62:not([disabled]):focus {
+  box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+}
+
+.button-62:not([disabled]):hover {
+  box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+}
+
+
+.buy-button:hover {
+background-color: #458ca0;
+}
