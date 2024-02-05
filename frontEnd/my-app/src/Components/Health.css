@@ -1,8 +1,4 @@
-body {
-    background-color: #000;
-    color: #fff;
-    font-family: 'Inter', sans-serif; /* Clean, modern font for space exploration */
-  }
+
   
   /* Layout with celestial balance */
   .health-care {
@@ -78,7 +74,7 @@ body {
   .response {
     margin-top: 20px;
     font-weight: bold;
-    color: #4a90e2;
+    color: rgba(239, 71, 101, 0.5);
   }
   .h2{
     font-family: Comic Sans MS, Comic Sans, cursive;

@@ -4,6 +4,7 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
+    background-color: #e2be08;
   }
   
   .login-container {
@@ -11,26 +12,28 @@
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    background-color: #ffffff;
+    background-color: #e2be08;
   }
   
   h2 {
     margin-bottom: 20px;
+    color: #020202;
   }
   
   .form-group {
     margin-bottom: 20px;
   }
   
-  label {
+  .form-group label {
     display: block;
     margin-bottom: 5px;
+    color: black;
   }
   
   input {
     width: 100%;
     padding: 10px;
-    border: 1px solid #cccccc;
+    border: 1px solid #020202;
     border-radius: 5px;
   }
   

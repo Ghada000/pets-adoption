@@ -377,4 +377,27 @@
 .class{
   display:flex;
   
+}  .btns {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background-color 0.3s, color 0.3s;
+  cursor: pointer;
+  color: #222219;
+  background-color: #cccccc;
 }
+
+.btns:hover {
+  background-color: black;
+  color: rgb(71, 71, 8);
+}
+
+.btns:active {
+  transform: scale(0.95);
+}
+
+/* Optional: Add more styles for different button states (e.g., focus, disabled) */

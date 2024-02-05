@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { FaRegHeart } from 'react-icons/fa';
 import axios from 'axios';
+import '../App.css'
 
 export default function ProductsCats({ addToCart }) {
   const [data, setData] = useState([]);
@@ -33,8 +34,8 @@ export default function ProductsCats({ addToCart }) {
               <FaRegHeart className='h' onClick={() => handleAddToCart(e)} />
             </div>
             <div className='class'>
-              <button>Update</button>
-              <button>Delete</button>
+              <button className='btns' >Update</button>
+              <button className='btns' >Delete</button>
             </div>
           </div>
         ))}
