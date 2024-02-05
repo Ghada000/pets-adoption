@@ -1,8 +1,4 @@
-body {
-    background-color: #000;
-    color: #fff;
-    font-family: 'Inter', sans-serif; /* Clean, modern font for space exploration */
-  }
+
   
   /* Layout with celestial balance */
   .health-care {
@@ -12,6 +8,9 @@ body {
     padding: 20px;
     margin: 40px auto; /* Center for a galactic view */
     max-width: 1000px; /* Contain the cosmic expanse */
+    background-color: #010458;
+    border-radius: 15px;
+    margin-bottom: 8%;
   }
   
   /* Frame images like interstellar probes */
@@ -28,20 +27,24 @@ body {
     margin-left: 20px;
   }
   
+  .form-container h2 {
+    color: #fff;
+  }
   form {
     display: flex;
     flex-direction: column;
     gap: 15px;
     padding: 20px;
     border-radius: 10px;
-    background-color: rgba(0, 0, 0, 0.4); /* Semi-transparent backdrop */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Depth for a floating effect */
+    background-color: rgba(156, 223, 225, 0.4); /* Semi-transparent backdrop */
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.5); /* Depth for a floating effect */
   }
   
   /* Inputs for precise data entry */
   label {
     font-weight: bold;
     margin-bottom: 5px;
+    color: #fff;
   }
   
   input {
@@ -55,7 +58,7 @@ body {
   
   /* Buttons for mission-critical actions */
   button {
-    background-color: rgba(239, 71, 101, 0.5);
+    background-color:rgb(216, 181, 6); /* Cosmic blue for activation */
     color: #fff;
     padding: 12px 20px;
     border: none;
@@ -66,10 +69,7 @@ body {
     transition: background-color 0.2s ease;
   }
   
-  button:hover {
-    background-color: rgba(129, 60, 73, 0.5)/* Deeper shade for engagement */
-  }
-  
+
   /* Feedback from the cosmos */
   .response {
     margin-top: 20px;
@@ -79,3 +79,4 @@ body {
   .h2{
     font-family: Comic Sans MS, Comic Sans, cursive;
   }
+

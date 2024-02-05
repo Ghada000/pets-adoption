@@ -4,10 +4,16 @@
   display: flex;
   justify-content: space-around;
   margin: 20px;
+  width:90%;
+  align-items:center;
+  justify-content: space-between;
+  margin-left: 5%;
+  gap: 80px;
+  margin-bottom:5% ;
 }
 
 .pet-article {
-  width: 50%;
+  /* width: 45%; */
   border: 1px solid #ccc;
   margin: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
@@ -35,7 +41,7 @@
 .article-content h2 {
   margin-bottom: 10px;
   font-family: Helvetica, sans-serif;
-  color: #3366cc; /* Example color, you can change it */
+  color: #e1c80c; /* Example color, you can change it */
   /* Add more styles as needed */
 }
 .article-content p {
@@ -49,13 +55,15 @@
 }
 
 .title{
-  font-family: Comic Sans MS, Comic Sans, cursive;
+  font-family:'Times New Roman', Times, serif;
   margin-top: 15px;
+  margin-top: 5%;
+  margin-bottom: 4%;
 }
 
 .o9ros {
             
-  background: linear-gradient(to bottom right, #EF4765, #FF9A5A);
+  background-color: rgb(216, 181, 6);
   border: 0;
   border-radius: 12px;
   color: #FFFFFF;
@@ -63,10 +71,10 @@
   display: inline-block;
   font-family: -apple-system,system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
   font-size: 16px;
-  font-weight: 500;
+  font-weight:300;
   line-height: 2.5;
   outline: transparent;
-  padding: 0 1rem;
+  /* padding: 0 1rem; */
   text-align: center;
   text-decoration: none;
   transition: box-shadow .2s ease-in-out;
@@ -74,9 +82,14 @@
   -webkit-user-select: none;
   touch-action: manipulation;
   white-space: nowrap;
-  margin-top: 10%;
+  padding: 10px;
+  margin: 10px;
+  width: 35%;
 }
 
+.o9res:hover{
+  background-color: #afe86a;
+}
 .button-62:not([disabled]):focus {
   box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
 }
