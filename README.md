@@ -1,1 +1,1 @@
-# pets-adoption
+Pets-Adoption is a compassionate platform dedicated to connecting people with animals in need of a loving home. Our mission is to make pet adoption simple, accessible, and rewarding for everyone involved. By providing detailed profiles of adoptable pets and offering support throughout the adoption process, we help individuals find their perfect furry companion and give animals a chance for a better life. Join us in making a difference—one adoption at a time.
